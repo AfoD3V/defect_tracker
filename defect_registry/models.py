@@ -7,7 +7,7 @@ User = get_user_model()
 # Create your models here.
 class Project(models.Model):
     project_name = models.TextField()
-    created_at = models.TimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
@@ -24,6 +24,7 @@ class UserProject(models.Model):
 
 class Domain(models.Model):
     domain_name = models.TextField()
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
         return self.domain_name

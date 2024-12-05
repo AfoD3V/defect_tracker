@@ -1,0 +1,962 @@
+[    
+    {
+        "model": "defect_registry.defect",
+        "pk": 1,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "Login page crashes without credentials",
+            "domain": 3,
+            "status": "N",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Open login page and click 'Login' without entering credentials.",
+            "expected_result": "Error message prompting for credentials.",
+            "actual_result": "Application throws an exception and crashes."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 2,
+        "fields": {
+            "created_by": 2,
+            "project": 1,
+            "summary": "Dashboard widgets overlap on small screens",
+            "domain": 3,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Login and view dashboard on a mobile device.",
+            "expected_result": "Widgets adjust to screen size.",
+            "actual_result": "Widgets overlap and are unreadable."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 3,
+        "fields": {
+            "created_by": 3,
+            "project": 1,
+            "summary": "Data not saved to database",
+            "domain": 3,
+            "status": "A",
+            "priority": "H",
+            "severity": "C",
+            "steps": "Submit new user profile information.",
+            "expected_result": "Data is saved and confirmation is displayed.",
+            "actual_result": "No confirmation, data not saved."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 4,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "Missing error message for incorrect password",
+            "domain": 2,
+            "status": "N",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Enter an incorrect password on the login page.",
+            "expected_result": "An error message should be displayed.",
+            "actual_result": "No error message appears."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 5,
+        "fields": {
+            "created_by": 2,
+            "project": 1,
+            "summary": "User profile page loads slowly",
+            "domain": 2,
+            "status": "IP",
+            "priority": "L",
+            "severity": "B",
+            "steps": "Navigate to the user profile page after login.",
+            "expected_result": "Page loads quickly.",
+            "actual_result": "Page takes more than 10 seconds to load."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 6,
+        "fields": {
+            "created_by": 3,
+            "project": 1,
+            "summary": "Database query times out",
+            "domain": 2,
+            "status": "A",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Run a report that retrieves data from the database.",
+            "expected_result": "Report loads within 5 seconds.",
+            "actual_result": "Report times out after 30 seconds."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 7,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "Missing text labels in navigation bar",
+            "domain": 2,
+            "status": "IP",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Navigate to the main page.",
+            "expected_result": "All buttons should have visible text labels.",
+            "actual_result": "Some buttons are missing text labels."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 8,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "Password reset email not received",
+            "domain": 2,
+            "status": "N",
+            "priority": "H",
+            "severity": "B",
+            "steps": "Request a password reset email.",
+            "expected_result": "Password reset email should be received within 5 minutes.",
+            "actual_result": "No email received after 10 minutes."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 9,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "Form submission validation error not shown",
+            "domain": 2,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Submit a form with empty required fields.",
+            "expected_result": "Validation error should be displayed for missing fields.",
+            "actual_result": "No validation error displayed."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 10,
+        "fields": {
+            "created_by": 2,
+            "project": 1,
+            "summary": "Content not displayed on homepage",
+            "domain": 1,
+            "status": "A",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Navigate to the homepage.",
+            "expected_result": "Content should be displayed correctly.",
+            "actual_result": "Content does not load or is missing."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 11,
+        "fields": {
+            "created_by": 2,
+            "project": 1,
+            "summary": "Session timeout too short",
+            "domain": 1,
+            "status": "N",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Stay logged in for 15 minutes without activity.",
+            "expected_result": "Session should last at least 30 minutes.",
+            "actual_result": "Session expires after 10 minutes of inactivity."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 12,
+        "fields": {
+            "created_by": 2,
+            "project": 1,
+            "summary": "Broken image link in footer",
+            "domain": 1,
+            "status": "IP",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Scroll to the footer of the page.",
+            "expected_result": "Footer images should load correctly.",
+            "actual_result": "One of the images does not load and shows a broken link."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 13,
+        "fields": {
+            "created_by": 3,
+            "project": 1,
+            "summary": "Data export generates incorrect file format",
+            "domain": 1,
+            "status": "A",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Export data as CSV.",
+            "expected_result": "File should be saved as a valid CSV format.",
+            "actual_result": "File is saved as a corrupt format, not opening in Excel."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 14,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "Search bar does not return results",
+            "domain": 1,
+            "status": "IP",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Search for an existing user.",
+            "expected_result": "The correct user should appear in the search results.",
+            "actual_result": "Search returns no results, even though user exists."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 15,
+        "fields": {
+            "created_by": 2,
+            "project": 1,
+            "summary": "Text input field allows invalid characters",
+            "domain": 1,
+            "status": "N",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Try entering special characters in the username field.",
+            "expected_result": "Only valid alphanumeric characters should be allowed.",
+            "actual_result": "Special characters like '@' and '#' are accepted."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 16,
+        "fields": {
+            "created_by": 3,
+            "project": 1,
+            "summary": "Text input field allows invalid characters",
+            "domain": 1,
+            "status": "N",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Try entering special characters in the username field.",
+            "expected_result": "Only valid alphanumeric characters should be allowed.",
+            "actual_result": "Special characters like '@' and '#' are accepted."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 17,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "Button clicks not responding after modal closure",
+            "domain": 1,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Open modal, click a button inside it, then close the modal.",
+            "expected_result": "The button should still respond to clicks after closing the modal.",
+            "actual_result": "Button becomes unresponsive after the modal is closed."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 18,
+        "fields": {
+            "created_by": 2,
+            "project": 1,
+            "summary": "Dropdown menu items not aligned correctly",
+            "domain": 1,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Click on a dropdown menu to open it.",
+            "expected_result": "Menu items should be aligned evenly.",
+            "actual_result": "Menu items are misaligned and appear jumbled."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 19,
+        "fields": {
+            "created_by": 3,
+            "project": 1,
+            "summary": "File upload validation error not triggered",
+            "domain": 1,
+            "status": "IP",
+            "priority": "H",
+            "severity": "B",
+            "steps": "Attempt to upload a non-image file to the profile image uploader.",
+            "expected_result": "An error message should appear, indicating that the file is not a valid image.",
+            "actual_result": "The file uploads without validation, resulting in a broken image on the profile."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 20,
+        "fields": {
+            "created_by": 1,
+            "project": 1,
+            "summary": "API returns incorrect data format",
+            "domain": 1,
+            "status": "N",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Call the user profile API endpoint.",
+            "expected_result": "The response should be in JSON format with the correct keys.",
+            "actual_result": "The API returns XML instead of JSON, causing issues with data parsing."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 21,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Broken link in the terms and conditions page",
+            "domain": 4,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Navigate to the 'Terms and Conditions' link in the footer.",
+            "expected_result": "The link should open the terms and conditions page.",
+            "actual_result": "The link leads to a 404 error page."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 22,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Overlapping text in footer section",
+            "domain": 4,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Scroll to the footer on a desktop browser.",
+            "expected_result": "Text should be clear and non-overlapping.",
+            "actual_result": "Text in the footer overlaps and is unreadable."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 23,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Multiple form submission causes error",
+            "domain": 4,
+            "status": "N",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Submit the form multiple times in quick succession.",
+            "expected_result": "Form submission should be handled gracefully.",
+            "actual_result": "Multiple submissions cause a server error due to duplicate entries."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 24,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Application crashes on logout",
+            "domain": 4,
+            "status": "A",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Log in and then click the logout button.",
+            "expected_result": "User should be logged out and redirected to the login page.",
+            "actual_result": "Application crashes and requires a restart."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 25,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Incorrect password hint displayed",
+            "domain": 4,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Click on the 'Forgot Password' link.",
+            "expected_result": "Password hint should provide a secure hint.",
+            "actual_result": "Password hint reveals too much information, compromising security."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 26,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "App fails to detect inactive session",
+            "domain": 4,
+            "status": "N",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Leave the session idle for 20 minutes.",
+            "expected_result": "Session should time out after a set period of inactivity.",
+            "actual_result": "Session remains active, allowing unauthorized access."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 27,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Search results display outdated content",
+            "domain": 4,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Search for an item that was recently updated.",
+            "expected_result": "The most recent content should appear first in the results.",
+            "actual_result": "Outdated content is displayed, ignoring the latest updates."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 28,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Calendar view displays wrong dates",
+            "domain": 4,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "View the calendar for the current month.",
+            "expected_result": "The calendar should display the correct dates for the current month.",
+            "actual_result": "Dates are off by one day, causing confusion."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 29,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Text input not responsive on touch devices",
+            "domain": 4,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Try typing in a text input field on a touch device.",
+            "expected_result": "Text input should respond correctly to touch events.",
+            "actual_result": "The input field is unresponsive to touch typing on mobile devices."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 30,
+        "fields": {
+            "created_by": 4,
+            "project": 2,
+            "summary": "Login button disappears on page load",
+            "domain": 4,
+            "status": "A",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Load the login page.",
+            "expected_result": "Login button should appear and remain visible.",
+            "actual_result": "The login button disappears after the page has finished loading."
+        }
+    },   
+    {
+        "model": "defect_registry.defect",
+        "pk": 31,
+        "fields": {
+            "created_by": 5,
+            "project": 2,
+            "summary": "Navigation menu freezes when hovering over options",
+            "domain": 5,
+            "status": "N",
+            "priority": "H",
+            "severity": "B",
+            "steps": "Hover over any item in the navigation menu.",
+            "expected_result": "Menu options should remain responsive.",
+            "actual_result": "The menu freezes and doesn't respond to further actions."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 32,
+        "fields": {
+            "created_by": 5,
+            "project": 2,
+            "summary": "Home page loads incorrectly on mobile devices",
+            "domain": 5,
+            "status": "A",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Visit the home page on a mobile device.",
+            "expected_result": "Page should load correctly with a mobile-friendly layout.",
+            "actual_result": "The page elements are misaligned, causing a poor user experience."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 33,
+        "fields": {
+            "created_by": 5,
+            "project": 2,
+            "summary": "JavaScript error when submitting the contact form",
+            "domain": 5,
+            "status": "IP",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Fill out the contact form and submit it.",
+            "expected_result": "Form should submit without errors.",
+            "actual_result": "A JavaScript error occurs, preventing the form from being submitted."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 34,
+        "fields": {
+            "created_by": 5,
+            "project": 2,
+            "summary": "Password reset email not sent",
+            "domain": 5,
+            "status": "N",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Request a password reset from the login page.",
+            "expected_result": "A password reset email should be sent.",
+            "actual_result": "No email is received despite submitting the request."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 35,
+        "fields": {
+            "created_by": 5,
+            "project": 2,
+            "summary": "Profile picture not updating after upload",
+            "domain": 5,
+            "status": "A",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Upload a new profile picture from the settings page.",
+            "expected_result": "The profile picture should update immediately.",
+            "actual_result": "The old profile picture remains after the upload."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 36,
+        "fields": {
+            "created_by": 5,
+            "project": 2,
+            "summary": "Incorrect user role permissions after login",
+            "domain": 5,
+            "status": "N",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Log in as a user with restricted access rights.",
+            "expected_result": "The user should only see permitted sections.",
+            "actual_result": "The user is able to access restricted areas of the application."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 37,
+        "fields": {
+            "created_by": 5,
+            "project": 2,
+            "summary": "Slow page load times on product listings",
+            "domain": 5,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Browse the product listings page.",
+            "expected_result": "Page should load within 2 seconds.",
+            "actual_result": "Page takes more than 10 seconds to load, causing user frustration."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 38,
+        "fields": {
+            "created_by": 6,
+            "project": 2,
+            "summary": "Multiple login attempts lead to server crash",
+            "domain": 6,
+            "status": "A",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Attempt to log in multiple times with incorrect credentials.",
+            "expected_result": "The login system should prevent multiple failed attempts.",
+            "actual_result": "Server crashes after too many failed login attempts."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 39,
+        "fields": {
+            "created_by": 6,
+            "project": 2,
+            "summary": "Error message not displayed for invalid email format",
+            "domain": 6,
+            "status": "IP",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Enter an invalid email format in the registration form.",
+            "expected_result": "An error message should appear indicating an invalid email format.",
+            "actual_result": "No error message is displayed, and the form is submitted with an invalid email."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 40,
+        "fields": {
+            "created_by": 6,
+            "project": 2,
+            "summary": "Broken pagination on the product listings page",
+            "domain": 6,
+            "status": "N",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Navigate to the last page of product listings.",
+            "expected_result": "Pagination should allow navigation between pages.",
+            "actual_result": "The pagination is stuck on the first page."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 41,
+        "fields": {
+            "created_by": 7,
+            "project": 3,
+            "summary": "Overlapping content on the homepage slider",
+            "domain": 7,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Visit the homepage and view the slider section.",
+            "expected_result": "The content in the slider should be well spaced and not overlap.",
+            "actual_result": "Text and images overlap in the slider, affecting readability."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 42,
+        "fields": {
+            "created_by": 8,
+            "project": 3,
+            "summary": "Currency symbol missing in checkout page",
+            "domain": 8,
+            "status": "IP",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Proceed to the checkout page after adding items to the cart.",
+            "expected_result": "Currency symbol should be displayed next to item prices.",
+            "actual_result": "The currency symbol is missing, showing only the numeric value."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 43,
+        "fields": {
+            "created_by": 8,
+            "project": 3,
+            "summary": "Error message displayed for valid form submission",
+            "domain": 8,
+            "status": "N",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Submit the form with valid data.",
+            "expected_result": "The form should submit without any errors.",
+            "actual_result": "An error message is shown even though the form is filled out correctly."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 44,
+        "fields": {
+            "created_by": 8,
+            "project": 3,
+            "summary": "Non-functional links in the FAQ section",
+            "domain": 8,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Click on any link in the FAQ section.",
+            "expected_result": "Each link should open the corresponding FAQ topic.",
+            "actual_result": "All the links in the FAQ section are broken and lead to 404 errors."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 45,
+        "fields": {
+            "created_by": 8,
+            "project": 3,
+            "summary": "Video player fails to load content on slow networks",
+            "domain": 8,
+            "status": "N",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Attempt to play a video on a slow network connection.",
+            "expected_result": "The video player should buffer and allow playback on slow connections.",
+            "actual_result": "The video player fails to load content on slow networks, showing a loading error."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 46,
+        "fields": {
+            "created_by": 8,
+            "project": 3,
+            "summary": "Form field validation fails for numeric input",
+            "domain": 8,
+            "status": "A",
+            "priority": "M",
+            "severity": "C",
+            "steps": "Enter text in a numeric-only field in the form.",
+            "expected_result": "An error should be shown indicating that the input is invalid.",
+            "actual_result": "The form is submitted without validation and causes backend errors."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 47,
+        "fields": {
+            "created_by": 8,
+            "project": 3,
+            "summary": "Cart is not updating after adding items",
+            "domain": 8,
+            "status": "A",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Add items to the shopping cart and check the cart total.",
+            "expected_result": "Cart total should update with the new items added.",
+            "actual_result": "The cart total remains the same even after adding items."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 48,
+        "fields": {
+            "created_by": 9,
+            "project": 3,
+            "summary": "Inconsistent font sizes across pages",
+            "domain": 8,
+            "status": "IP",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Browse through various pages in the application.",
+            "expected_result": "Font sizes should be consistent across all pages.",
+            "actual_result": "Font sizes vary drastically, making the application look unprofessional."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 49,
+        "fields": {
+            "created_by": 9,
+            "project": 3,
+            "summary": "Logout button does not respond",
+            "domain": 8,
+            "status": "N",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Click the logout button from the user menu.",
+            "expected_result": "User should be logged out and redirected to the login page.",
+            "actual_result": "Clicking the logout button has no effect."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 50,
+        "fields": {
+            "created_by": 9,
+            "project": 3,
+            "summary": "Page content not centered on larger screens",
+            "domain": 8,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "View the homepage on a large screen.",
+            "expected_result": "Content should be centered properly.",
+            "actual_result": "Content is left-aligned, creating an unbalanced layout."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 51,
+        "fields": {
+            "created_by": 9,
+            "project": 3,
+            "summary": "Search feature returns no results for valid queries",
+            "domain": 8,
+            "status": "A",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Search for a valid product name in the search bar.",
+            "expected_result": "Relevant products should appear in the search results.",
+            "actual_result": "No results are returned even for valid queries."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 52,
+        "fields": {
+            "created_by": 9,
+            "project": 3,
+            "summary": "Empty cart after logging out and logging back in",
+            "domain": 8,
+            "status": "N",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Add items to the cart, log out, and log back in.",
+            "expected_result": "Cart should contain the same items after logging back in.",
+            "actual_result": "The cart is empty after re-login."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 53,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Missing breadcrumb navigation on product pages",
+            "domain": 9,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Visit any product detail page.",
+            "expected_result": "Breadcrumb navigation should be visible for better navigation.",
+            "actual_result": "No breadcrumb navigation is visible on product detail pages."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 54,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Broken image links on the blog page",
+            "domain": 9,
+            "status": "IP",
+            "priority": "L",
+            "severity": "B",
+            "steps": "Browse through the blog page.",
+            "expected_result": "All images should load correctly.",
+            "actual_result": "Several images are not loading, and broken link icons are visible."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 55,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Unresponsive navigation bar on mobile view",
+            "domain": 9,
+            "status": "N",
+            "priority": "M",
+            "severity": "B",
+            "steps": "View the navigation bar on a mobile device.",
+            "expected_result": "Navigation bar should be functional and responsive.",
+            "actual_result": "The navigation bar is not clickable, preventing users from navigating."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 56,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Images not optimized for fast loading",
+            "domain": 9,
+            "status": "A",
+            "priority": "M",
+            "severity": "B",
+            "steps": "Visit any image-heavy page.",
+            "expected_result": "Images should load efficiently and quickly.",
+            "actual_result": "Images take a long time to load, especially on slower connections."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 57,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Accessibility issues with form elements",
+            "domain": 9,
+            "status": "N",
+            "priority": "M",
+            "severity": "A",
+            "steps": "Navigate through the form with a screen reader.",
+            "expected_result": "All form elements should be properly labeled and accessible.",
+            "actual_result": "Several form elements are not properly labeled, causing accessibility issues."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 58,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Carousel does not pause on hover",
+            "domain": 9,
+            "status": "A",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Hover over any item in the carousel.",
+            "expected_result": "Carousel should pause on hover for easier viewing.",
+            "actual_result": "The carousel continues to move even when hovered over."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 59,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Unable to apply discount code during checkout",
+            "domain": 9,
+            "status": "IP",
+            "priority": "H",
+            "severity": "A",
+            "steps": "Enter a valid discount code during checkout.",
+            "expected_result": "Discount should be applied to the total price.",
+            "actual_result": "The discount code is not applied, and the total price remains unchanged."
+        }
+    },
+    {
+        "model": "defect_registry.defect",
+        "pk": 60,
+        "fields": {
+            "created_by": 10,
+            "project": 3,
+            "summary": "Time zone mismatch in order confirmation emails",
+            "domain": 9,
+            "status": "N",
+            "priority": "L",
+            "severity": "C",
+            "steps": "Complete an order and check the confirmation email.",
+            "expected_result": "Order confirmation should show the correct time zone.",
+            "actual_result": "The order confirmation email shows the wrong time zone, confusing the user."
+        }
+    }
+]

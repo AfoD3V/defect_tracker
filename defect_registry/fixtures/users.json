@@ -1,0 +1,142 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "Alice",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "alice@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Alice",
+            "last_name": "Smith"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "Bob",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "bob@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Bob",
+            "last_name": "Johnson"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "Jim",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "jim@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Jim",
+            "last_name": "Carter"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "username": "Ken",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "ken@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Ken",
+            "last_name": "Johnson"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "username": "Zet",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "zet@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Zet",
+            "last_name": "Jinex"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 6,
+        "fields": {
+            "username": "Alfred",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "alfred@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Alfred",
+            "last_name": "Patsula"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "username": "Fred",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "fred@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Fred",
+            "last_name": "Astras"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 8,
+        "fields": {
+            "username": "Filip",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "fiip@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Filip",
+            "last_name": "Mortis"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 9,
+        "fields": {
+            "username": "Karim",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "Karim@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Karim",
+            "last_name": "Kafter"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 10,
+        "fields": {
+            "username": "Erhan",
+            "password": "pbkdf2_sha256$216000$random_salt$hash",
+            "email": "erhan@example.com",
+            "is_staff": false,
+            "is_active": false,
+            "is_superuser": false,
+            "first_name": "Erhan",
+            "last_name": "Farsen"
+        }
+    }
+]

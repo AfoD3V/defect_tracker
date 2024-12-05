@@ -1,0 +1,82 @@
+[
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 1,
+        "fields": {
+            "project": 1,
+            "user": 1
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 2,
+        "fields": {
+            "project": 1,
+            "user": 2
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 3,
+        "fields": {
+            "project": 1,
+            "user": 3
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 4,
+        "fields": {
+            "project": 2,
+            "user": 4
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 5,
+        "fields": {
+            "project": 2,
+            "user": 5
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 6,
+        "fields": {
+            "project": 2,
+            "user": 6
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 7,
+        "fields": {
+            "project": 3,
+            "user": 7
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 8,
+        "fields": {
+            "project": 3,
+            "user": 8
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 9,
+        "fields": {
+            "project": 3,
+            "user": 9
+        }
+    },
+    {
+        "model": "defect_registry.UserProject",
+        "pk": 10,
+        "fields": {
+            "project": 3,
+            "user": 10
+        }
+    }
+]  

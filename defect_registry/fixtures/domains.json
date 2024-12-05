@@ -1,0 +1,74 @@
+[
+    {
+        "model": "defect_registry.domain",
+        "pk": 1,
+        "fields": {
+            "domain_name": "Domain Alpha_A",
+            "project": 1
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 2,
+        "fields": {
+            "domain_name": "Domain Alpha_B",
+            "project": 1
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 3,
+        "fields": {
+            "domain_name": "Domain Alpha_C",
+            "project": 1
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 4,
+        "fields": {
+            "domain_name": "Domain Beta_A",
+            "project": 2
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 5,
+        "fields": {
+            "domain_name": "Domain Beta_B",
+            "project": 2
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 6,
+        "fields": {
+            "domain_name": "Domain Beta_C",
+            "project": 2
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 7,
+        "fields": {
+            "domain_name": "Domain Zetta_A",
+            "project": 3
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 8,
+        "fields": {
+            "domain_name": "Domain Zetta_B",
+            "project": 3
+        }
+    },
+    {
+        "model": "defect_registry.domain",
+        "pk": 9,
+        "fields": {
+            "domain_name": "Domain Zetta_C",
+            "project": 3
+        }
+    }
+]
