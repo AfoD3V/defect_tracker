@@ -3,5 +3,9 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.defect_home_page, name="home_page"),
+    path("login", views.login_view, name="login"),
+    path("logout", views.logout_view, name="logout"),
+    path("set-csrf-token", views.set_csrf_token, name="set_csrf_token"),
+    path("user", views.user, name="user"),
+    path("register", views.register, name="register"),
 ]

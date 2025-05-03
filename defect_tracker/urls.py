@@ -21,6 +21,6 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("defect/", include("defect_registry.urls")),
+    path("api/", include("defect_registry.urls")),
     path("", views.base_view, name="base_view"),
 ]
